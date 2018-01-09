@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<title>
+2017 Spring 機械設計工程系網際內容管理
+</title>
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
+    
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <link rel="stylesheet" href="data/reveal/reveal.css">
+    <link rel="stylesheet" href="data/reveal/black.css" id="theme">
+    
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="data/reveal/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match( /print-pdf/gi ) ? 'data/reveal/pdf.css' : 'data/reveal/paper.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="data/reveal/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<div class="reveal">
+
+<div class="slides">
+<section data-markdown>
+    <script type="text/template">
+## 2017Fall CADP 與 CP
+
+### 虎科大機械設計工程系
+###設計一甲 潘季宏
+
+<small>
+Created by [KMOLab](http://kmolab.github.io/blog/)
+</small>
+
+[CADP 與 CP 課程網誌](blog/index.html)
+
+
+    </script>
+</section>
+
+
+						
+<section>
+    <section data-markdown>
+        <script type="text/template">
+    ##上課筆記內容
+
+    <img src="https://cpa.kmol.info/40623152/raw/418da20f5cf103384097958c6fac09827de007e07577808cafcd9be4d4720f8b?m=image/jpeg" width="850" height="500"></a>
+
+
+        </script>
+    </section>
+</section>
+<section>
+    <section data-markdown>
+        <script type="text/template">
+    # W1-W3
+
+    * 準備筆記本、隨身碟與耳機
+    * 充分了解隨身系統的啟動關機與使用
+    * 先在近端運作, 然後同桌電腦, 最後區網與雲端
+    * 了解機械設計本質, 六種表達與如何培養創造力
+    * 要怎麼收穫, 就那麼栽, 沒有捷徑, 真的沒有捷徑
+    * 每天紀錄, 自己如何過完人生中這個寶貴的一天
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+    ##如何啟動Fossil程式
+
+    * 按下start是開始
+
+    * 按下stop全部停止
+
+    <img src="https://cpa.kmol.info/40623152/raw/a5c6cf19c85313a87828f3097bd2bdce150a305714866545551a8eaed8b1e037?m=image/png" width="800" height="300"></a>
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+    ##基本要訣:
+    * Start後就開始學習這些Fossil的要點
+    * fossil add-新增
+    * fossil clone-複製
+    * fossil commit-m"提交名稱"提交
+    * fossil status →查看自己所更改的東西是否有刪除的需要
+    * fossil delete 檔案路徑 →出現Missing時要刪除的指令
+
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+    ###遠端推近端
+    *  先 cd tmp 接著 mkdir fossil ， cd fossil 再mkdir wd ， cd wd 之後 mkdir 40623152 ，cd 40623152 ←←表示(cd xx表示你進入xx的資較夾裡面，mkdier xx 為你在此處見的資料夾)
+    * 如果你隨身碟檔案消失你可以這樣做
+    →→在fossil裡做fossil clone 這個步驟複製遠端的資料  (ex.fossil clone https://cpa.kmol.info/46023152 40623152.fossil)
+    * clone 完後，cd ./../..回到40623152做fossil open ./../../40623152.fossil
+        </script>
+    </section>
+</section>
+
+						
+<section>
+    <section data-markdown>
+        <script type="text/template">
+    ##W4-W6
+    * 新增網誌
+    * 編輯內容並上傳
+    * 新增 eric6 的概略
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+    ##如何新增網誌↓↓↓
+     
+    1.先到Scite開啟 launchLeo.py 再F5
+
+    2.開啟後,打開user裡的yen.Leo
+
+    3.之後可以新增或是維護,修改自己的網誌
+
+    <img src="https://cpa.kmol.info/40623152/raw/8c2a4e8258e99895e168e50903e6aca0d391b72b9de2b6f3434feb5f9374f0f9?m=image/png" width="600" height="300"></a>"
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+    ##如何上傳網誌
+    * 完成所做的內容後 就可以上傳啦
+     1.按leo 左上方的pelican-blog 推上近端
+     2.推上遠端就用github傳至雲端
+     3.回到python程式，用fossil add . ,再用fossil status檢查是否有遺漏,若沒有問題,即可fossil commit -m "............".
+
+    <img src="https://cpa.kmol.info/40623152/raw/3c9cb12a690676a9f7ab408dc1ff72dd129a11da13be326e9e1c01da02065209?m=image/jpeg" width="600" height="300"></a>"
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+    ##如何操作 eric6 基本架構
+    從旁邊的push button拉進框格內，之後ctrl+5整理排列，對框格內右鍵"Lay out" 之後就會排版順序
+
+    <img src="https://cpa.kmol.info/40623152/raw/bb06c7fb5e314fcd37e01f2282539fd11ef7dd6da2990ce94648839f18a0340d?m=image/jpeg" width="600" height="300"></a>"
+        </script>
+    </section>
+</section>
+
+						
+<section>
+    <section data-markdown>
+        <script type="text/template">
+    ###w7-w9 期中驗收週
+
+    * 錄製維護網誌影片過程
+    * 將錄製完的影片放置網誌內
+    * python程式語言與for的迴圈的使用
+    * 了解eric6如何弄出計算機架構
+    * 製作出期中投影片簡報
+        </script>
+    </section>
+
+
+    						
+    <section data-markdown>
+        <script type="text/template">
+    ###影片錄製
+    * 到資料夾裡ShareX-portable找到ShareX.exe，打開ShareX.exe後改取setting的路徑，改好路徑就可以按Shift+Prt sc就能直接start/stop
+
+    <img src="https://cpa.kmol.info/40623152/raw/260b350e8a4b473096a830419f5ba82bf7a2d33651549170448be0f3870bfae6?m=image/png" width="600" height="300"></a>"
+        </script>
+    </section>
+
+
+    						
+    <section data-markdown>
+        <script type="text/template">
+    # 放入影片
+
+    <a href="https://vimeo.com/240293335">vimeo 影片</a>
+
+    ```
+    <iframe src="https://player.vimeo.com/video/240293335" width="640" height="491" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <p><a href="https://vimeo.com/240293335">cpa 40623152 W7 考試.</a>
+    from <a href="https://vimeo.com/user73295710">40623152</a>
+     on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+    ```
+        </script>
+    </section>
+
+
+    						
+    <section data-markdown>
+        <script type="text/template">
+    ##簡單的for迴圈操作方法↓↓↓
+    * 打出一串簡單的程式碼
+    <img src="https://cpa.kmol.info/40623152/raw/ceeb223b725c702f360af5a087145264b9526beec1d6a4cc848680ec0e736d31?m=image/png" width="300" height="200"></a>"
+    * 程式Run一下就會跑出圖形
+    <img src="https://cpa.kmol.info/40623152/raw/69bf65a297f39cb37c4aa3cb629b15fbc834d4ddb9d1f0aa146df1de847f98de?m=image/png" width="300" height="200"></a>"
+        </script>
+    </section>
+
+
+    						
+    <section data-markdown>
+        <script type="text/template">
+    ##自評成績
+
+    * 出席 20%：20
+    * 平時表現 30%：20
+    * 驗收考試 30%：20
+    * 驗收簡報 20%：14
+    * 總評：74 分
+        </script>
+    </section>
+
+</section>
+
+
+						
+<section>
+    <section data-markdown>
+        <script type="text/template">
+    # W10-W12
+
+    * 新增 github 帳號
+    *  Qt Disign 數學運算邏輯概念
+    *  綁定 git config --global user.name "學號 "
+    * 綁定 git config --global user.name "email "
+    * 綁定後至Y槽並拉至SciTE檢查
+        </script>
+    </section>
+
+
+    						
+    <section data-markdown>
+        <script type="text/template">
+    ##在DOS上 git config 綁定自己的學號跟信箱
+    <img src="https://cpa.kmol.info/40623152/raw/41b6b32e33e5fd66edb3b3c087e2a514be8b434b8c2bd22431db44173725d64e?m=image/png" width="600" height="300"></a>"
+        </script>
+    </section>
+
+
+    						
+
+        
+    <section data-markdown>
+        <script type="text/template">
+    ##在SciTE 上檢查綁定內容
+    <img src="https://cpa.kmol.info/40623152/raw/c21c50444eebae1b600ffb5d64b92c1ee4d8563cdf48f59120ee23a8579522b2?m=image/png" width="600" height="300"></a>"
+        </script>
+    </section>
+</section>
+
+
+						
+<section>
+<section data-markdown>
+    <script type="text/template">
+#   w13-15
+ 
+* 建立github協同倉儲
+* 新增 git add .
+* 新增版本 git commit -m " "
+* 以下是和fossil不同的
+* 改版內容資料利用git push推送
+* 將遠端內容轉至近端用 git pull
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+###git 基本操作方法
+<img src="https://cpa.kmol.info/40623152/raw/388e69db159c696b2753a6750e5755f54191c24999394026ea8ed64b0bea106f?m=image/png" width="600" height="300"></a>"
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+###建立github 協同倉儲，之後在上面推送資料
+<img src="https://cpa.kmol.info/40623152/raw/14909181de457cc053e6ac9e4476e58eb4a90563a69aaeb2bf78be7de80f871e?m=image/png" width="600" height="300"></a>"
+    </script>
+</section>
+</section>
+
+						
+<section>
+<section data-markdown>
+    <script type="text/template">
+#w16-w18
+* 透過分組來做出計算機程式
+* 分組期末報告
+* 將影片放入 youtube
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+#計算機按鍵定義
+<img src="https://cpa.kmol.info/40623152/raw/9f0c602f8c00b924785cbf5c9537de9f2c92f78243199693402f65f61a6b54ee?m=image/png" width="600" height="300"></a>"
+    </script>
+</section>
+
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+#計算機成品及功能
+<img src="https://cpa.kmol.info/40623152/raw/2dd40419600bcf65c54ea0abc5269f110162092a6e94068b9e4dbdda7d7750b6?m=image/png" width="600" height="300"></a>"
+    </script>
+</section>
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+## 自評成績
+
+* 77分
+    </script>
+</section>
+
+
+					
+</section>
+</div>
+
+</div>
+
+<script src="data/reveal/head.min.js"></script>
+<script src="data/reveal/reveal.js"></script>
+<script>
+        // More info https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+
+            transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+            // More info https://github.com/hakimel/reveal.js#dependencies
+            dependencies: [
+                { src: 'data/reveal/classList.js', condition: function() { return !document.body.classList; } },
+                { src: 'data/reveal/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: 'data/reveal/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: 'data/reveal/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                { src: 'data/reveal/zoom.js', async: true },
+                { src: 'data/reveal/notes.js', async: true },
+                { src: 'data/reveal/math.js', async: true }
+            ]
+        });
+</script>
+</body>
+</html>
+
